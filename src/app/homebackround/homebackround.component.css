@@ -1,0 +1,16 @@
+.background-container {
+    background-image: url('https://orcharddesigns.com/wp-content/uploads/2017/05/web-design-background-image.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    height: 100vh; /* Make sure the container takes the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centers content inside the container */
+    text-align: center; /* Centers the text */
+    color: white; /* Ensures text is visible against the background */
+}
+
+h1, p {
+    margin: 10px;
+}

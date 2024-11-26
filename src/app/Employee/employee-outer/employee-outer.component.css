@@ -1,0 +1,111 @@
+
+.newDepartment {
+    border: 2px solid black; 
+    padding: 20px; 
+    margin: 20px auto; /* Center alignment */
+    width: 300px; /* Restrict width */
+    border-radius: 10px; /* Add rounded corners */
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.newDepartment h1 {
+    text-align: center; /* Center the heading */
+    color: #333333; /* Dark text for readability */
+}
+
+.newDepartment label {
+    font-size: 14px; /* Adjust label font size */
+    color: #555555; /* Slightly lighter text color */
+    margin-top: 10px; /* Add spacing between inputs */
+    display: block; /* Ensure labels are block elements */
+}
+
+.newDepartment input {
+    width: 100%; /* Make inputs fill the width of the parent */
+    padding: 8px; /* Add padding for better usability */
+    margin-bottom: 10px; /* Add spacing between inputs */
+    border: 1px solid #cccccc; /* Add a border to inputs */
+    border-radius: 5px; /* Round the corners */
+    box-sizing: border-box; /* Ensure padding doesn't break layout */
+}
+
+.newDepartment .button-group {
+    display: flex; /* Arrange buttons side by side */
+    justify-content: space-between; /* Add spacing between buttons */
+}
+
+.newDepartment .reset, .newDepartment .save {
+    padding: 8px 16px; /* Add padding to buttons */
+    border: none; /* Remove button borders */
+    border-radius: 5px; /* Round the corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    color: #ffffff; /* White text color */
+}
+
+.newDepartment .reset {
+    background-color: #f44336; /* Red background for reset */
+}
+
+.newDepartment .save {
+    background-color: #4caf50; /* Green background for save */
+}
+
+.newDepartment .reset:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.newDepartment .save:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+:host {
+    display: block;
+    height: 100vh;
+    background-color: #f0f8ff; /* Light blue for the page */
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto; /* Centers the table horizontally */
+    text-align: center; /* Centers text inside the table cells */
+  }
+  
+  th, td {
+    border: 1px solid rgb(212, 211, 211);
+    padding: 8px;
+    text-align: center; /* Aligns text in cells to the left */
+  }
+  
+  th {
+    background-color: #c5c7c9;
+  }
+  .edit {
+    background-color: #4f7dfc;
+   
+}
+
+.delete {
+    background-color: #f44336; 
+    
+}
+
+.edit:hover {
+    background-color: #3a5cf5; /* Darker red on hover */
+}
+
+.delete:hover {
+    background-color: #ff0000; /* Darker green on hover */
+}
+.delete,.edit,.update{
+    margin-right: 60px;
+    padding: 8px 16px; /* Add padding to buttons */
+    border: none; /* Remove button borders */
+    border-radius: 5px; /* Round the corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    color: #ffffff; /* White text color */
+}
+.update{
+    background-color: rgb(255, 255, 2);
+    color: black;
+}

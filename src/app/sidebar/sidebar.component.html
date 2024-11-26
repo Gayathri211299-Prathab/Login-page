@@ -1,0 +1,12 @@
+<!--  button only visible when sidebar is closed -->
+<div class="toggle-btn" *ngIf="!isSidebarOpen" (click)="toggleSidebar()">
+  &#9776;
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar" [ngClass]="{'open': isSidebarOpen}">
+  <ul class="navbar-nav">
+    <li class="nav-item"><a (click)="navigateEmployee()" class="nav-link">Employee</a></li>
+    
+  </ul>
+</div>

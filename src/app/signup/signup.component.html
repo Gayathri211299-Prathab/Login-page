@@ -1,0 +1,35 @@
+<div class="center-container">
+    <div class="center-content">
+        <div class="headingContainer">
+            <h2 class="heading">REGISTRATION FORM</h2>
+        </div>
+        <form>
+            <!-- Username -->
+            <input type="text" placeholder="Username" name="userName" [(ngModel)]="loginObj.userName" />
+
+            <br />
+
+            <!-- Mobile Number -->
+            <input type="number" placeholder="Mobile" name="mobile" [(ngModel)]="loginObj.mobile" />
+
+            <br />
+
+            <!-- Email -->
+            <input type="text" placeholder="Email Id" name="emailId" [(ngModel)]="loginObj.emailId">
+            <br />
+
+            <!-- Password -->
+            <input type="text" placeholder="Password" name="password" [(ngModel)]="loginObj.password" />
+
+            <br />
+
+            <!-- Confirm Password -->
+            <input type="text" placeholder="Confirm-Password" name="confirmPassword" [(ngModel)]="loginObj.password" />
+
+            <br />
+
+            <!-- Submit button -->
+            <button (click)="onSave()">Submit</button>
+        </form>
+    </div>
+</div>

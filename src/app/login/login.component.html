@@ -1,0 +1,27 @@
+<div class="parent">
+
+<div class="card">
+    <div class="loginDesign">
+    <h2>Login Form</h2>
+</div>
+
+
+
+        <!-- FORMULAIRE -->
+    <form class="form">
+        <input type="text" name="emailId" [(ngModel)]="emailId"    placeholder="Email Adress" class="email">
+        <input type="text" name = "password" [(ngModel)]="password"  placeholder="password" class="pass">
+    </form>
+
+ 
+
+        <!-- BOUTTON LOGIN -->
+        <button type="button" (click)="getApi()" class="login_btn">Login</button>
+
+        <!-- PIED DE LA CARD -->
+    <div class="footer_card">
+    <p>Not a member?</p>
+    <a href="#">Singup now</a>
+    </div>
+</div>
+</div>

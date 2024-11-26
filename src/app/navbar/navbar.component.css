@@ -1,0 +1,28 @@
+/* Basic styling for navbar */
+.navbar {
+  display: flex; /* Enables flexbox for alignment */
+  justify-content: flex-end; /* Aligns content to the right */
+  padding: 10px 20px;
+  
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flex layout for nav items */
+}
+
+.nav-item {
+  margin: 0 15px; /* Spacing between items */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #c4ee0c;
+  
+}}

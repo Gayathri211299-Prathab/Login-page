@@ -1,0 +1,48 @@
+<div class="outer">
+    <div class="newDepartment">
+        <div class="employeedetails">
+            <h1>Employee Details</h1>
+        </div>
+            <!-- EmployeeName -->
+        <label class="EmployeeName">Department Name</label><br />
+        <input type="text" placeholder="Enter Employee Name" [(ngModel)]="employeeObj.EmployeeName" name="EmployeeName" /><br />
+        
+            <!-- EmployeeID -->
+        <label class="EmployeeId">Employee ID</label><br />
+        <input type="text" placeholder="Enter Employee ID" [(ngModel)]="employeeObj.EmployeeID" name="EmployeeID" /><br />
+        
+        <!-- Reset Button -->
+        <button class="reset" (click)="resetForm()">Reset</button>
+        
+        <!-- Save Button -->
+        <button *ngIf="updateemployee === 0; else updateTemplate" class="save" (click)="addEmployee()">Save</button>
+        <ng-template #updateTemplate>
+            <button class="update" (click)="onUpdate()">Update</button>
+        </ng-template>
+    </div>
+</div>
+<div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Employee Name</th>
+                <th>Employee ID</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employeeList; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ employee.EmployeeName }}</td>
+                <td>{{ employee.EmployeeID}}</td>
+                <td>
+                    <button class="edit" (click)="onEdit(employee)">Edit</button>
+                    <button class="delete" (click)="onDelete(employee.EmployeeID)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<router-outlet></router-outlet>
